@@ -11,6 +11,7 @@
    <main>
       <div class="container">
          <h2 style="text-align: center;">SANDBOX-TOOLS</h2>
+         <h3 style="text-align: center; margin-top: 40px;">COMMON CLICKABLE ELEMENTS</h3>
 
          <div class="item"><h1>H1</h1></div>
          <div class="item"><h2>H2</h2></div>
@@ -45,7 +46,15 @@
          </div>
 
          <div class="item">
-            <button class="btn" type="submit">BUTTON</button>
+            <button class="btn" type="button">BUTTON [type=button]</button>
+         </div>
+
+         <div class="item">
+            <button class="btn" type="submit">BUTTON [type=submit]</button>
+         </div>
+
+         <div class="item">
+            <button class="btn" type="reset">BUTTON [type=reset]</button>
          </div>
 
          <div class="item">
@@ -59,13 +68,13 @@
       </div>
 
       <div class="inputs-container">
-         <h2 style="text-align: center;">INPUTS</h2>
+         <h2 style="text-align: center;">&lt;INPUTS&gt;</h2>
 
          <h3 style="text-align: center; margin-top: 50px;">BUTTON-CONTAINING</h3>
 
          <div class="item">
             <label for="input-image">input-image</label>
-            <input src="/img/input-img.jpg" id="input-image" type="image">
+            <input src="./img/input-img.jpg" id="input-image" type="image">
          </div>
 
          <div class="item">
@@ -176,6 +185,21 @@
          </div>
 
       </div>
+
+      <div class="inputs-container">
+         <h3 style="text-align: center;">INPUTS NOT REPRESENTED BY &lt;INPUT&gt; ELEMENT</h3>
+         
+         <div class="item">
+            <label for="textarea">TEXTAREA</label>
+            <textarea name="textarea" id="textarea" cols="20" rows="1"></textarea>
+         </div>
+
+         <div class="item">
+
+         </div>
+
+      </div>
+
    </main>
    <script src="script.js"></script>
 </body>

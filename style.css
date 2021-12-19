@@ -70,8 +70,13 @@ input {
 }
 
 .inputs-container {
+   margin: 0;
    padding: 25px;
    background-color: rgb(168, 167, 182);
+}
+
+.inputs-container:last-child {
+   background-color: rgb(235, 214, 198);
 }
 
 input[type="button"] {
@@ -79,4 +84,8 @@ input[type="button"] {
    border-radius: 5px;
    width: 30px;
    height: 30px;
+}
+
+textarea {
+   margin-left: 25px;
 }
