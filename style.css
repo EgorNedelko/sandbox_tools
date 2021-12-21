@@ -16,8 +16,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+a,
+li,
+.div,
+span {
+   max-width: fit-content;
    font-weight: 400;
+   user-select: none;
 }
 
 a,
@@ -43,6 +50,22 @@ li {
 
 .container {
    padding: 25px;
+}
+
+.item.border > h1,
+.item.border > h2,
+.item.border > h3,
+.item.border > h4,
+.item.border > h5,
+.item.border > h6,
+.item.border > p,
+.item.border > a,
+.item.border > .list > li,
+.item.border.div,
+.item.border > span {
+   padding: 6px;
+   border: 1.5px solid gray;
+   border-radius: 25%;
 }
 
 .btn {
@@ -88,4 +111,40 @@ input[type="button"] {
 
 textarea {
    margin-left: 25px;
+}
+
+h1.pressed {
+   font-size: 33px;
+}
+
+h2.pressed {
+   font-size: 24px;
+}
+
+h3.pressed {
+   font-size: 19px;
+}
+
+h4.pressed {
+   font-size: 15.5px;
+}
+
+h5.pressed {
+   font-size: 13px;
+}
+
+h6.pressed {
+   font-size: 10.5px;
+}
+
+p.pressed,
+a.pressed,
+li.pressed,
+.div.pressed,
+span.pressed {
+   font-size: 15.5px;
+}
+
+img.pressed {
+   transform: scale(0.97);
 }
