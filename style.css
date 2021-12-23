@@ -22,9 +22,12 @@ a,
 li,
 .div,
 span {
-   max-width: fit-content;
+   /* max-width: fit-content; */
    font-weight: 400;
    user-select: none;
+}
+#clickable {  
+   max-width: fit-content;
 }
 
 a,
@@ -88,7 +91,7 @@ option {
 
 input {
    margin-left: 25px;
-   margin-top: 25px;
+   /* margin-top: 25px; */
    cursor: pointer;
 }
 
@@ -96,6 +99,14 @@ input {
    margin: 0;
    padding: 25px;
    background-color: rgb(168, 167, 182);
+}
+
+.inputs-container:first-child {
+   background-color: rgb(235, 214, 198);
+}
+
+.inputs-container:nth-child(3) {
+   background-color: rgb(198, 235, 224);
 }
 
 .inputs-container:last-child {
