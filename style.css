@@ -45,14 +45,27 @@ a {
 
 button {
    cursor: pointer;
+   min-width: 150px;
+   text-align: left;
+   padding: 7px;
+   box-shadow: 5px 2px 6px rgba(0, 0, 0, 0.123);
+}
+
+label[for="inptBtnsLABEL"] {
+   display: block;
+   margin: 15px;
 }
 
 li {
    list-style: none;
 }
 
-.container {
-   padding: 25px;
+
+
+.flex-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
 }
 
 .item.border > h1,
@@ -69,11 +82,6 @@ li {
    padding: 6px;
    border: 1.5px solid gray;
    border-radius: 25%;
-}
-
-.btn {
-   padding: 7px;
-   box-shadow: 5px 2px 6px rgba(0, 0, 0, 0.123);
 }
 
 .dropdown-select {
@@ -95,29 +103,55 @@ input {
    cursor: pointer;
 }
 
-.inputs-container {
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+   margin-left: 40px;
+   background-color: rgb(239, 239, 239), rgb(59, 59, 59);
+   border-radius: 5px;
+   width: 60px;
+   height: 30px;
+}
+
+input[value="inptBtnVALUE"],
+input[value="inptSubmitVALUE"],
+input[value="inptResetVALUE"] {
+   width: 150px;
+   height: 30px;
+}
+
+.container {
    margin: 0;
    padding: 25px;
-   background-color: rgb(168, 167, 182);
+   background-color: rgb(182, 179, 187);
 }
 
-.inputs-container:first-child {
-   background-color: rgb(235, 214, 198);
-}
-
-.inputs-container:nth-child(3) {
+.container.buttons {
    background-color: rgb(198, 235, 224);
 }
 
-.inputs-container:last-child {
+.container.btns {
    background-color: rgb(235, 214, 198);
 }
 
-input[type="button"] {
-   background-color: rgb(239, 239, 239), rgb(59, 59, 59);
-   border-radius: 5px;
-   width: 30px;
-   height: 30px;
+.container.submit {
+   background-color: rgb(201, 235, 198);
+}
+
+.container.reset {
+   background-color: rgb(235, 198, 224);
+}
+
+.container.text {
+   background-color: rgb(198, 235, 224);
+}
+
+.container.email {
+   background-color: rgb(235, 214, 198);
+}
+
+.container.password {
+   background-color: rgb(201, 235, 198);
 }
 
 textarea {

@@ -45,7 +45,7 @@
             <img id="clickable" src="img/img.jpeg" alt="img">
          </div>
 
-         <div class="item">
+         <!-- <div class="item">
             <button class="btn" type="button">BUTTON [type=button]</button>
          </div>
 
@@ -55,138 +55,302 @@
 
          <div class="item">
             <button class="btn" type="reset">BUTTON [type=reset]</button>
-         </div>
+         </div> -->
 
          <div class="item">
-            <label for="dropdown-select">SELECT</label>
-            <select class="dropdown-select" name="dropdown" id="dropdown-select">
-               <option value="1">OPTION-1</option>
-               <option value="2">OPTION-2</option>
-               <option value="3">OPTION-3</option>
+            <label for="dropdownSELECT">slect</label>
+            <select class="dropdown-slect" name="dropdown" id="dropdownSELECT">
+               <option value="1">opt-1</option>
+               <option value="2">opt-2</option>
+               <option value="3">opt-3</option>
             </select>
          </div>
       </div>
 
-      <div class="inputs-container">
-         <h2 style="text-align: center;">&lt;INPUTS&gt;</h2>
+      <!--buttons-->
+      <div class="container buttons">
+         <h3 style="text-align: center;">BUTTONS</h3>
 
-         <h3 style="text-align: center; margin-top: 50px;">BUTTON-CONTAINING</h3>
+         <div class="flex-container">
+            <div class="col">
+               <p>buttons-inner-text</p>
+               <div class="item">
+                  <button type="button">type-btns</button>
+               </div>
+      
+               <div class="item">
+                  <button type="submit">type-submit</button>
+               </div>
+      
+               <div class="item">
+                  <button type="reset">type-reset</button>
+               </div>
+            </div>
 
+            <div class="col">
+               <p>buttons-value</p>
+               <div class="item">
+                  <button value="btnsVALUE" type="button">type-btns-value</button>
+               </div>
+      
+               <div class="item">
+                  <button value="submitVALUE" type="submit">type-submit-value</button>
+               </div>
+      
+               <div class="item">
+                  <button value="resetVALUE" type="reset">type-reset-value</button>
+               </div>
+            </div>
+
+            <div class="col">
+               <p>buttons-name</p>
+               <div class="item">
+                  <button name="btnsNAME" type="button">type-btns-name</button>
+               </div>
+      
+               <div class="item">
+                  <button name="submitNAME" type="submit">type-submit-name</button>
+               </div>
+      
+               <div class="item">
+                  <button name="resetNAME" type="reset">type-reset-name</button>
+               </div>
+            </div>
+
+            <div class="col">
+               <p>buttons-id</p>
+               <div class="item">
+                  <button id="btnsID" type="button">type-btns-id</button>
+               </div>
+      
+               <div class="item">
+                  <button id="submitID" type="submit">type-submit-id</button>
+               </div>
+      
+               <div class="item">
+                  <button id="resetID" type="reset">type-reset-id</button>
+               </div>
+            </div>
+
+            <div class="col">
+               <p>buttons-class</p>
+               <div class="item">
+                  <button class="btn-btns" type="button">type-btns-class</button>
+               </div>
+      
+               <div class="item">
+                  <button class="btn-submit" type="submit">type-submit-class</button>
+               </div>
+      
+               <div class="item">
+                  <button class="btn-reset" type="reset">type-reset-class</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--inpt-type-btns-->
+      <div class="container btns">
+         <h3 style="text-align: center;">INPT-TYPE-BTNS</h3>
+
+         <div class="flex-container">
+            <div class="item">
+               <input value="inptBtnVALUE" type="button">
+            </div>
+   
+            <div class="item">
+               <label for="inptBtnsLABEL">inpt-type-btns-labl</label>
+               <input id="inptBtnsLABEL" type="button">
+            </div>
+
+            <div class="item">
+               <p>inpt-type-btns-name</p>
+               <input name="inptBtnsNAME" type="button">
+            </div>
+
+            <div class="item">
+               <p>inpt-type-btns-id</p>
+               <input id="inptBtnsID" type="button">
+            </div>
+
+            <div class="item">
+               <p>inpt-type-btns-class</p>
+               <input class="inptBtnsCLASS" type="button">
+            </div>
+         </div>
+      </div>
+
+      <!--inpt-type-submit-->
+      <div class="container submit">
+         <h3 style="text-align: center;">INPT-TYPE-SUBMIT</h3>
+
+         <div class="flex-container">
+            <div class="item">
+               <input value="inptSubmitVALUE" type="submit">
+            </div>
+   
+            <div class="item">
+               <label for="inptBtnsLABEL">inpt-type-submit-labl</label>
+               <input id="inptSubmitLABEL" type="submit" value="submit">
+            </div>
+
+            <div class="item">
+               <p>inpt-type-submit-name</p>
+               <input name="inptSubmitNAME" type="submit" value="submit">
+            </div>
+
+            <div class="item">
+               <p>inpt-type-submit-id</p>
+               <input id="inptSubmitID" type="submit" value="submit">
+            </div>
+
+            <div class="item">
+               <p>inpt-type-submit-class</p>
+               <input class="inptSubmitCLASS" type="submit" value="submit">
+            </div>
+         </div>
+      </div>
+
+      <!--inpt-type-reset-->
+      <div class="container reset">
+         <h3 style="text-align: center;">INPT-TYPE-RESET</h3>
+
+         <div class="flex-container">
+            <div class="item">
+               <input value="inptResetVALUE" type="reset">
+            </div>
+   
+            <div class="item">
+               <label for="inptBtnsLABEL">inpt-type-reset-labl</label>
+               <input id="inptResetLABEL" type="reset" value="reset">
+            </div>
+
+            <div class="item">
+               <p>inpt-type-reset-name</p>
+               <input name="inptResetNAME" type="reset" value="reset">
+            </div>
+
+            <div class="item">
+               <p>inpt-type-reset-id</p>
+               <input id="inptResetID" type="reset" value="reset">
+            </div>
+
+            <div class="item">
+               <p>inpt-type-reset-class</p>
+               <input class="inptResetCLASS" type="reset" value="reset">
+            </div>
+         </div>
+      </div>
+
+      <!--type-text -->
+      <div class="container text">
+         <h3 style="text-align: center;">TYPE-TEXT</h3>
+   
          <div class="item">
-            <label for="input-image">input-image</label>
-            <input src="./img/input-img.jpg" id="input-image" type="image">
+            <span>inpt-text-value</span>
+            <input value="inputTextVALUE" type="text">
          </div>
 
          <div class="item">
-            <label for="input-button">input-button</label>
-            <input id="input-button" type="button">
+            <label for="inputTextLABEL">inpt-text-labl</label>
+            <input id="inputTextLABEL" type="text">
          </div>
 
          <div class="item">
-            <label for="input-submit">input-submit</label>
-            <input id="input-submit" type="submit">
+            <span>inpt-text-placeholder</span>
+            <input placeholder="inputTextPLACEHOLDER" type="text">
          </div>
 
          <div class="item">
-            <label for="input-reset">input-reset</label>
-            <input id="input-reset" type="reset">
+            <span>inpt-text-name</span>
+            <input name="inputTextNAME" type="text">
          </div>
 
          <div class="item">
-            <label for="input-file">input-file</label>
-            <input id="input-file" type="file">
+            <span>inpt-text-id</span>
+            <input id="inputTextID" type="text">
          </div>
 
          <div class="item">
-            <label for="input-checkbox">input-checkbox</label>
-            <input id="input-checkbox" type="checkbox">
+            <span>inpt-text-class</span>
+            <input class="inputTextCLASS" type="text">
+         </div>
+      </div>
+
+      <!--type-email -->
+      <div class="container email">
+         <h3 style="text-align: center;">TYPE-EMAIL</h3>
+
+         <div class="item">
+            <span>inpt-email-value</span>
+            <input value="inputEmailVALUE" type="email">
          </div>
 
          <div class="item">
-            <label for="input-radio">input-radio</label>
-            <input id="input-radio" type="radio">
+            <label for="inputEmailLABEL">inpt-email-labl</label>
+            <input id="inputEmailLABEL" type="email">
          </div>
 
          <div class="item">
-            <label for="input-date">input-date</label>
-            <input id="input-date" type="date">
+            <span>inpt-email-placeholder</span>
+            <input placeholder="inputEmailPLACEHOLDER" type="email">
          </div>
 
          <div class="item">
-            <label for="input-month">input-month</label>
-            <input id="input-month" type="month">
+            <span>inpt-email-name</span>
+            <input name="inputEmailNAME" type="email">
          </div>
 
          <div class="item">
-            <label for="input-week">input-week</label>
-            <input id="input-week" type="week">
+            <span>inpt-email-id</span>
+            <input id="inputEmailID" type="email">
          </div>
 
          <div class="item">
-            <label for="input-datetime-local">input-datetime-local</label>
-            <input id="input-datetime-local" type="datetime-local">
-         </div>
-
-         <div class="item">
-            <label for="input-time">input-time</label>
-            <input id="input-time" type="time">
-         </div>
-
-         <div class="item">
-            <label for="input-color">input-color</label>
-            <input id="input-color" type="color">
-         </div>
-
-         <div class="item">
-            <label for="input-range">input-range</label>
-            <input id="input-range" type="range">
-         </div>
-
-         <h3 style="text-align: center; margin-top: 50px;">NON-BUTTON</h3>
-
-         <div class="item">
-            <label for="input-number">input-number</label>
-            <input id="input-number" type="number">
-         </div>
-
-         <div class="item">
-            <label for="input-email">input-email</label>
-            <input id="input-email" type="email">
-         </div>
-
-         <div class="item">
-            <label for="input-password">input-password</label>
-            <input id="input-password" type="password">
-         </div>
-         
-         <div class="item">
-            <label for="input-search">input-search</label>
-            <input id="input-search" type="search">
-         </div>
-         
-         <div class="item">
-            <label for="input-tel">input-tel</label>
-            <input id="input-tel" type="tel">
-         </div>
-
-         <div class="item">
-            <label for="input-text">input-text</label>
-            <input id="input-text" type="text">
-         </div>
-
-         <div class="item">
-            <label for="input-url">input-url</label>
-            <input id="input-url" type="url">
-         </div>
-
-         <div class="item">
-            <label for="input-hidden">input-hidden</label>
-            <input id="input-hidden" type="hidden">
+            <span>inpt-email-class</span>
+            <input class="inputEmailCLASS" type="email">
          </div>
 
       </div>
 
-      <div class="inputs-container">
+      <!--type-password -->
+      <div class="container password">
+         <h3 style="text-align: center;">TYPE-PASSWORD</h3>
+
+         <div class="item">
+            <span>inpt-password-value</span>
+            <input value="inputPasswordVALUE" type="password">
+         </div>
+
+         <div class="item">
+            <label for="inputPasswordLABEL">inpt-password-labl</label>
+            <input id="inputPasswordLABEL" type="password">
+         </div>
+
+         <div class="item">
+            <span>inpt-password-placeholder</span>
+            <input placeholder="inputPasswordPLACEHOLDER" type="password">
+         </div>
+
+         <div class="item">
+            <span>inpt-password-name</span>
+            <input name="inputPasswordNAME" type="password">
+         </div>
+
+         <div class="item">
+            <span>inpt-password-id</span>
+            <input id="inputPasswordID" type="password">
+         </div>
+
+         <div class="item">
+            <span>inpt-password-class</span>
+            <input class="inputPasswordCLASS" type="password">
+         </div>
+
+      </div>
+
+      <!--text-area -->
+      <div class="container area">
          <h3 style="text-align: center;">TEXT-AREA</h3>
          
          <div class="item">
@@ -195,7 +359,7 @@
          </div>
 
          <div class="item">
-            <label for="textareaLABEL">text-area-label</label>
+            <label for="textareaLABEL">text-area-labl</label>
             <textarea id="textareaLABEL" cols="20" rows="1"></textarea>
          </div>
 
@@ -218,44 +382,7 @@
             <span>text-area-class</span>
             <textarea class="textareaCLASS" cols="20" rows="1"></textarea>
          </div>
-
       </div>
-
-      <div class="inputs-container">
-         <h3 style="text-align: center;">TYPE-TEXT</h3>
-         
-         <div class="item">
-            <span>input-text-value</span>
-            <input value="inputTextVALUE" type="text">
-         </div>
-
-         <div class="item">
-            <label for="inputTextLABEL">input-text-label</label>
-            <input id="inputTextLABEL" type="text">
-         </div>
-
-         <div class="item">
-            <span>input-text-placeholder</span>
-            <input placeholder="inputTextPLACEHOLDER" type="text">
-         </div>
-
-         <div class="item">
-            <span>input-text-name</span>
-            <input name="inputTextNAME" type="text">
-         </div>
-
-         <div class="item">
-            <span>input-text-id</span>
-            <input id="inputTextID" type="text">
-         </div>
-
-         <div class="item">
-            <span>input-text-class</span>
-            <input class="inputTextCLASS" type="text">
-         </div>
-
-      </div>
-
    </main>
    <script src="script.js"></script>
 </body>
